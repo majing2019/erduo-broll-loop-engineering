@@ -4809,12 +4809,13 @@ test('runtime lock pins the complete HyperFrames and Skills CLI graph with integ
   assert.equal(packageJson.version, RELEASE_VERSION);
   assert.equal(lock.version, RELEASE_VERSION);
   assert.equal(lock.packages[''].version, RELEASE_VERSION);
-  assert.match(readme, /github\.com\/erduo1998-cell\/erduo-broll-loop-engineering\/releases\/tag\/v1\.1\.0/u);
+  const releaseUrl = `https://github.com/erduo1998-cell/erduo-broll-loop-engineering/releases/tag/v${RELEASE_VERSION}`;
+  assert.ok(readme.includes(releaseUrl), 'README must link to the current release');
   assert.match(changelog, /## 0\.9\.2 —/u);
   assert.match(support, /`0\.9\.2`/u);
   assert.match(checklist, /`1\.0\.0`/u);
   for (const translatedReadme of translatedReadmes) {
-    assert.match(translatedReadme, /releases\/tag\/v1\.1\.0/u);
+    assert.ok(translatedReadme.includes(releaseUrl), 'Translated README must link to the current release');
     assert.match(translatedReadme, /references\/lean-production\.md/u);
     assert.match(translatedReadme, /references\/legacy-production\.md/u);
     assert.match(translatedReadme, /scripts\/doctor\.mjs/u);
