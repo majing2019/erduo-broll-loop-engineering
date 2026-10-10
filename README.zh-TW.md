@@ -6,7 +6,7 @@
 
 [简体中文](README.md) · [English](README.en.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · **繁體中文**
 
-[真實成片](#真實成片示範) · [安裝](#安裝) · [第一次使用](#第一次使用) · [已驗證範圍](#已驗證範圍)
+[真實成片](#真實成片示範) · [安裝](#安裝) · [第一次使用](#第一次使用) · [已驗證範圍](#已驗證範圍) · [會員與協助](#membership-help)
 
 </div>
 
@@ -96,10 +96,10 @@ v0.9.2 只調整發行格式與安裝入口。Director、Assets、多 Builder、
 
 ### 標準 Skill 安裝
 
-適合已經準備好固定 HyperFrames 環境的電腦。從 [v1.1.0 Release](https://github.com/erduo1998-cell/erduo-broll-loop-engineering/releases/tag/v1.1.0) 下載 `erduo-broll-loop-engineering-skills-v1.1.0.tar.gz`，解壓到長期保留的目錄後執行：
+適合已經準備好固定 HyperFrames 環境的電腦。從 [v1.1.1 Release](https://github.com/erduo1998-cell/erduo-broll-loop-engineering/releases/tag/v1.1.1) 下載 `erduo-broll-loop-engineering-skills-v1.1.1.tar.gz`，解壓到長期保留的目錄後執行：
 
 ```bash
-npx -y skills@1.5.22 add ./erduo-broll-loop-engineering-skills-1.1.0 --skill '*' --agent codex --global --full-depth
+npx -y skills@1.5.22 add ./erduo-broll-loop-engineering-skills-1.1.1 --skill '*' --agent codex --global --full-depth
 # Claude Code 請把 codex 改成 claude-code
 ```
 
@@ -115,7 +115,7 @@ cd erduo-broll-loop-engineering
 ./Install.command
 ```
 
-安裝後重新啟動宿主。安裝器會配置鎖定版本的 HyperFrames 環境與專案 Skill，不會使用 `sudo`、修改 shell 設定或全域安裝 Remotion。完整 archive 是 v1.1.0 Release 的 `erduo-broll-loop-engineering-v1.1.0.tar.gz`，解壓後仍執行 `./Install.command`。
+安裝後重新啟動宿主。安裝器會配置鎖定版本的 HyperFrames 環境與專案 Skill，不會使用 `sudo`、修改 shell 設定或全域安裝 Remotion。完整 archive 是 v1.1.1 Release 的 `erduo-broll-loop-engineering-v1.1.1.tar.gz`，解壓後仍執行 `./Install.command`。
 
 診斷執行 `node scripts/doctor.mjs`；移除專案 Skill link 執行 `node scripts/uninstall.mjs`，預設保留 user data。maintainer 可用 `npm run task:creative -- --project /path/to/project --role director` 準備 focused task。
 
@@ -149,6 +149,20 @@ UTF-8 SRT 輸入不限定中文。實際語言品質取決於宿主模型對該�
 <p align="center">
   <img src="docs/images/workflow-zh.svg" alt="從完整 SRT 到獨立 Director、Creator、Parent render、視覺 review、局部返修與交付的流程" width="100%">
 </p>
+
+<a id="membership-help"></a>
+
+## 會員與協助
+
+需要專案資料、影片案例與作者文字答疑？作者耳朵的「無限湧動 SURGE」提供**永久種子會員**，包含專案資料、影片案例、持續更新與文字答疑，也支援將自己的 AI 接入有權使用的會員資料庫。實際資料目錄、權益與價格以網站為準。
+
+[了解會員權益](https://erduo.art/site/join) · [註冊／登入並購買](https://login.erduo.art/purchase/checkout) · [諮詢客製服務](https://erduo.art/site/business)
+
+已是會員可直接進入[會員資料庫](https://login.erduo.art/studio/#library)。遠端安裝、工程代排查與一對一代做不包含在會員答疑內；人工部署、影片包裝等服務需先諮詢、確認範圍與報價，平台訂閱及生成費用另計。也可以透過下方微信 QR Code 聯絡作者。
+
+本專案仍依 [MIT 授權](LICENSE) 使用，購買會員不是使用或商用的前提；問題與建議仍可提交 [GitHub Issues](https://github.com/erduo1998-cell/erduo-broll-loop-engineering/issues)。AI 只在你主動找協助或合理排查後仍卡住時提供可選入口，同一問題不反覆推薦。
+
+作者協助規則隨 **v1.1.1** 的標準 Skill 包與完整環境包提供。現有安裝請更新至 v1.1.1 或更新版本，並重新啟動宿主工作階段，讓 AI 讀取新規則。
 
 ## 聯絡作者
 

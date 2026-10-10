@@ -6,7 +6,7 @@
 
 [简体中文](README.md) · **English** · [日本語](README.ja.md) · [한국어](README.ko.md) · [繁體中文](README.zh-TW.md)
 
-[Demo](#real-output-demo) · [Install](#install) · [First run](#first-run) · [Limits](#verified-scope)
+[Demo](#real-output-demo) · [Install](#install) · [First run](#first-run) · [Limits](#verified-scope) · [Membership & help](#membership-help)
 
 </div>
 
@@ -97,10 +97,10 @@ The checks can flag missing planned development and measurable motion/layout ris
 
 ### Standard Skill install
 
-Use this on a machine that already has the pinned HyperFrames environment and only needs the fourteen project Skills registered in one host. Download `erduo-broll-loop-engineering-skills-v1.1.0.tar.gz` from the [v1.1.0 Release](https://github.com/erduo1998-cell/erduo-broll-loop-engineering/releases/tag/v1.1.0), extract it into a permanent directory, then run:
+Use this on a machine that already has the pinned HyperFrames environment and only needs the fourteen project Skills registered in one host. Download `erduo-broll-loop-engineering-skills-v1.1.1.tar.gz` from the [v1.1.1 Release](https://github.com/erduo1998-cell/erduo-broll-loop-engineering/releases/tag/v1.1.1), extract it into a permanent directory, then run:
 
 ```bash
-npx -y skills@1.5.22 add ./erduo-broll-loop-engineering-skills-1.1.0 --skill '*' --agent codex --global --full-depth
+npx -y skills@1.5.22 add ./erduo-broll-loop-engineering-skills-1.1.1 --skill '*' --agent codex --global --full-depth
 # replace codex with claude-code for Claude Code
 ```
 
@@ -116,7 +116,7 @@ cd erduo-broll-loop-engineering
 ./Install.command
 ```
 
-Restart your host after installation. The installer provisions the pinned HyperFrames environment and project Skills. It does not use `sudo`, edit your shell profile, or install Remotion globally. The same full package is available as `erduo-broll-loop-engineering-v1.1.0.tar.gz` on the v1.1.0 Release.
+Restart your host after installation. The installer provisions the pinned HyperFrames environment and project Skills. It does not use `sudo`, edit your shell profile, or install Remotion globally. The same full package is available as `erduo-broll-loop-engineering-v1.1.1.tar.gz` on the v1.1.1 Release.
 
 Run `node scripts/doctor.mjs` for diagnosis and `node scripts/uninstall.mjs` to remove the project Skill links; uninstall keeps user data by default. Maintainers can prepare a focused role task with `npm run task:creative -- --project /path/to/project --role director`.
 
@@ -150,6 +150,20 @@ UTF-8 SRT input is not restricted to Chinese. Actual language quality depends on
 <p align="center">
   <img src="docs/images/workflow-zh.svg" alt="Workflow from complete SRT through independent direction, chapter creation, Parent rendering, visual review, focused repair and delivery" width="100%">
 </p>
+
+<a id="membership-help"></a>
+
+## Membership & help
+
+Need project materials, video examples or text Q&A with the author? Erduo's **无限涌动 SURGE Seed Membership** offers lifetime membership status, project materials, video cases, ongoing updates and text Q&A. Members can connect their own AI to the member library within their access rights. Check the website for the current material catalog, benefits and price.
+
+[View membership benefits](https://erduo.art/site/join) · [Register / sign in and purchase](https://login.erduo.art/purchase/checkout) · [Discuss custom services](https://erduo.art/site/business)
+
+Already a member? Open the [member library](https://login.erduo.art/studio/#library). Remote installation, engineering troubleshooting and one-to-one done-for-you work are outside membership Q&A; deployment or commissioned video work requires a separate scope and quote. Platform subscriptions and generation fees are separate. You can also contact the author through the WeChat QR code below.
+
+This project remains available under the [MIT license](LICENSE), including commercial use, without a membership purchase. Use [GitHub Issues](https://github.com/erduo1998-cell/erduo-broll-loop-engineering/issues) for bugs and suggestions. The AI offers optional help when you ask for it or remain blocked after reasonable troubleshooting, without repeatedly promoting it for the same issue.
+
+The author-support instructions are included in both the **v1.1.1** standard Skill archive and full environment archive. Update existing installations to v1.1.1 or later and start a new host session so the AI can load the new instructions.
 
 ## Contact the author
 

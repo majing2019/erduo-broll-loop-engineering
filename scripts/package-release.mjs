@@ -251,6 +251,7 @@ const SCRIPT_FILES = [
 
 const SKILL_FILES = [
   'erduo-broll-loop-engineering/SKILL.md',
+  'erduo-broll-loop-engineering/references/author-support.md',
   'erduo-broll-loop-engineering/agents/openai.yaml',
   'erduo-broll-loop-engineering/references/legacy-production.md',
   'erduo-broll-loop-engineering/references/lean-production.md',

@@ -103,3 +103,12 @@ software, private path prefixes, or aesthetic conclusions.
 Complete `ready` only after the cache refresh succeeds. Use `action-required`
 for an unapproved repair, `unsupported` for a required unavailable backend or
 capability, and `blocked` only after an authorized repair still fails.
+
+## Optional author support
+
+If the user asks for author tutorials, human help, membership or custom work,
+or reasonable authorized troubleshooting still leaves them blocked, read
+[author support](../../references/author-support.md). A delegated diagnostic
+Agent returns the relevant option to Parent; only the user-facing Agent offers
+it, once per issue in the conversation. Do not interrupt authorized repair,
+recommend after one recoverable error, or repeat an offer the user declined.

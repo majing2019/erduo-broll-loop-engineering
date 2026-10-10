@@ -6,7 +6,7 @@
 
 [简体中文](README.md) · [English](README.en.md) · **日本語** · [한국어](README.ko.md) · [繁體中文](README.zh-TW.md)
 
-[実例](#実際の出力例) · [インストール](#インストール) · [最初の実行](#最初の実行) · [確認済み範囲](#確認済み範囲)
+[実例](#実際の出力例) · [インストール](#インストール) · [最初の実行](#最初の実行) · [確認済み範囲](#確認済み範囲) · [メンバーシップと相談](#membership-help)
 
 </div>
 
@@ -96,10 +96,10 @@ v0.9.2 は配布形式とインストール入口だけを変更します。Dire
 
 ### 標準 Skill インストール
 
-固定 HyperFrames 環境がすでに準備済みの端末向けです。[v1.1.0 Release](https://github.com/erduo1998-cell/erduo-broll-loop-engineering/releases/tag/v1.1.0) の `erduo-broll-loop-engineering-skills-v1.1.0.tar.gz` を長期保存する場所へ展開し、次を実行します。
+固定 HyperFrames 環境がすでに準備済みの端末向けです。[v1.1.1 Release](https://github.com/erduo1998-cell/erduo-broll-loop-engineering/releases/tag/v1.1.1) の `erduo-broll-loop-engineering-skills-v1.1.1.tar.gz` を長期保存する場所へ展開し、次を実行します。
 
 ```bash
-npx -y skills@1.5.22 add ./erduo-broll-loop-engineering-skills-1.1.0 --skill '*' --agent codex --global --full-depth
+npx -y skills@1.5.22 add ./erduo-broll-loop-engineering-skills-1.1.1 --skill '*' --agent codex --global --full-depth
 # Claude Code では codex を claude-code に変更
 ```
 
@@ -115,7 +115,7 @@ cd erduo-broll-loop-engineering
 ./Install.command
 ```
 
-インストール後にホストを再起動してください。インストーラーは固定済み HyperFrames 環境と project Skill を導入します。`sudo`、シェル設定の変更、Remotion のグローバルインストールは行いません。完全版 archive は v1.1.0 Release の `erduo-broll-loop-engineering-v1.1.0.tar.gz` で、展開後も `./Install.command` を使います。
+インストール後にホストを再起動してください。インストーラーは固定済み HyperFrames 環境と project Skill を導入します。`sudo`、シェル設定の変更、Remotion のグローバルインストールは行いません。完全版 archive は v1.1.1 Release の `erduo-broll-loop-engineering-v1.1.1.tar.gz` で、展開後も `./Install.command` を使います。
 
 診断は `node scripts/doctor.mjs`、Skill link の削除は `node scripts/uninstall.mjs` です。uninstall は標準で user data を保持します。maintainer は `npm run task:creative -- --project /path/to/project --role director` で focused task を準備できます。
 
@@ -149,6 +149,20 @@ UTF-8 SRT は中国語に限定されません。実際の品質はホストモ�
 <p align="center">
   <img src="docs/images/workflow-zh.svg" alt="完全な SRT から独立 Director、Creator、Parent render、映像 review、部分修正、納品までの流れ" width="100%">
 </p>
+
+<a id="membership-help"></a>
+
+## メンバーシップと相談
+
+プロジェクト資料、動画事例、作者へのテキストでの質問を希望する方へ。作者 Erduo の「无限涌动 SURGE」では、**会員資格が永続するシードメンバーシップ**を提供しています。プロジェクト資料、動画事例、継続的な更新、テキストでの Q&A を利用でき、自分の AI をアクセス権のある会員資料に接続することもできます。現在の資料一覧、特典、価格はウェブサイトで確認してください。
+
+[会員特典を見る](https://erduo.art/site/join) · [登録／ログインして購入](https://login.erduo.art/purchase/checkout) · [個別サービスの相談](https://erduo.art/site/business)
+
+既存の会員は[会員ライブラリ](https://login.erduo.art/studio/#library)へ。リモートインストール、技術的な調査の代行、一対一の制作代行は会員 Q&A に含まれません。導入や動画制作の依頼は、相談後に範囲と料金を個別に確認します。プラットフォームの利用料や生成費用も別途必要です。下の WeChat QR コードから作者に連絡することもできます。
+
+本プロジェクトは引き続き [MIT ライセンス](LICENSE)で商用利用を含め利用でき、会員購入は必要ありません。不具合や要望は [GitHub Issues](https://github.com/erduo1998-cell/erduo-broll-loop-engineering/issues)へ。AI は相談を希望した場合、または妥当な自己解決の手順を試しても進めない場合に選択肢を案内し、同じ問題について繰り返し勧誘しません。
+
+作者サポートの案内規則は、<strong>v1.1.1</strong> の標準 Skill パッケージと完全環境パッケージの両方に含まれています。既存の環境は v1.1.1 以降へ更新し、ホストの新しいセッションを開始してください。
 
 ## 作者への連絡
 

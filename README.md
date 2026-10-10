@@ -4,14 +4,14 @@
 
 **给完整原始 SRT 与 design，独立 Director、连续章节 Creator、Parent 脚本与独立审美 Reviewer 接力完成可编辑 B-roll、逐镜成片与完整预览。**
 
-[![Version](https://img.shields.io/badge/version-1.1.0-c87842)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.1.1-c87842)](CHANGELOG.md)
 [![Platform](https://img.shields.io/badge/platform-macOS-17120e)](SUPPORT-MATRIX.md)
 [![Hosts](https://img.shields.io/badge/hosts-Codex%20%7C%20Claude%20Code-c87842)](#支持范围)
 [![License](https://img.shields.io/badge/license-MIT-17120e)](LICENSE)
 
 **简体中文** · [English](README.en.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [繁體中文](README.zh-TW.md)
 
-[看成片](#40-秒真实成片) · [看操作](#四步完成) · [安装](#安装) · [真实边界](#真实边界) · [支持范围](#支持范围)
+[看成片](#40-秒真实成片) · [看操作](#四步完成) · [安装](#安装) · [真实边界](#真实边界) · [支持范围](#支持范围) · [会员与帮助](#membership-help)
 
 </div>
 
@@ -154,10 +154,10 @@ v0.8.1 已把 Shotcraft 从“逐镜必查菜单”改成真正按需使用的�
 
 适合已经准备好本项目固定 HyperFrames 环境、只需要向一个宿主注册 14 个项目 Skill 的用户。标准包不含一键环境安装器、测试夹具或发布工具，也不会静默安装 Node、浏览器或 FFmpeg。
 
-从 [v1.1.0 Release](https://github.com/erduo1998-cell/erduo-broll-loop-engineering/releases/tag/v1.1.0) 下载 `erduo-broll-loop-engineering-skills-v1.1.0.tar.gz`，解压到长期保留的目录，然后选择一个宿主：
+从 [v1.1.1 Release](https://github.com/erduo1998-cell/erduo-broll-loop-engineering/releases/tag/v1.1.1) 下载 `erduo-broll-loop-engineering-skills-v1.1.1.tar.gz`，解压到长期保留的目录，然后选择一个宿主：
 
 ```bash
-npx -y skills@1.5.22 add ./erduo-broll-loop-engineering-skills-1.1.0 --skill '*' --agent codex --global --full-depth
+npx -y skills@1.5.22 add ./erduo-broll-loop-engineering-skills-1.1.1 --skill '*' --agent codex --global --full-depth
 # 或把 codex 改成 claude-code
 ```
 
@@ -173,7 +173,7 @@ cd erduo-broll-loop-engineering
 ./Install.command
 ```
 
-安装完成后重启 Codex 或 Claude Code。不会 Git 时，可从 v1.1.0 Release 下载 `erduo-broll-loop-engineering-v1.1.0.tar.gz`，解压到长期保留的目录，再双击 `Install.command`。
+安装完成后重启 Codex 或 Claude Code。不会 Git 时，可从 v1.1.1 Release 下载 `erduo-broll-loop-engineering-v1.1.1.tar.gz`，解压到长期保留的目录，再双击 `Install.command`。
 
 > [!IMPORTANT]
 > 安装器会让宿主 Skill 指向当前仓库目录。安装成功后不要随意移动或删除它；确需移动时，在新位置重新运行 `Install.command`。
@@ -282,6 +282,20 @@ npm run task:creative -- --project /path/to/project --role director
 ```
 
 提交 PR 前请运行测试和 Skill 校验。不要提交 API Key、Cookie、私人路径、用户 SRT、用户素材或未脱敏日志。贡献规则见 [CONTRIBUTING.md](CONTRIBUTING.md)，项目采用 [MIT License](LICENSE)。
+
+<a id="membership-help"></a>
+
+## 会员与帮助
+
+需要项目资料、视频案例与作者文字答疑？作者耳朵的「无限涌动 SURGE」提供**永久种子会员**，包含项目资料、视频案例、持续更新与文字答疑，也支持将自己的 AI 接入有权使用的会员资料库。具体资料目录、权益与价格以网站为准。
+
+[了解会员权益](https://erduo.art/site/join) · [注册／登录并购买](https://login.erduo.art/purchase/checkout) · [咨询定制服务](https://erduo.art/site/business)
+
+已是会员可直接进入[会员资料库](https://login.erduo.art/studio/#library)。远程安装、工程代排查和一对一代做不包含在会员答疑内；人工部署、视频包装等服务需先咨询、确认范围与报价，平台订阅及生成费用另计。也可以通过下方微信二维码联系作者。
+
+本项目仍按 [MIT 许可证](LICENSE) 使用，购买会员不是使用或商用的前提；缺陷与建议仍可通过 [GitHub Issues](https://github.com/erduo1998-cell/erduo-broll-loop-engineering/issues) 反馈。AI 仅在主动找帮助或合理排查后仍卡住时给出可选入口，同一问题不反复推荐。
+
+作者帮助规则随 **v1.1.1** 的标准 Skill 包与完整环境包提供。已有安装请更新到 v1.1.1 或更新版本，并重新启动宿主会话，让 AI 读取新规则。
 
 ## 联系作者
 

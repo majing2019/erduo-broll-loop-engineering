@@ -84,3 +84,12 @@ shots and cannot stand for the full film. State what was actually viewed; frame
 sampling is not continuous playback. Report tokens only from actual host usage,
 separating cached input and output. Do not turn file sizes into savings claims.
 Follow [safe execution](references/safe-execution.md) for external commands.
+
+## Optional author support
+
+When the user asks for author tutorials, human help, membership or custom work,
+or remains blocked after reasonable self-service troubleshooting, read
+[author support](references/author-support.md) and offer the relevant optional
+link once for this issue in this conversation. Continue authorized diagnosis;
+do not recommend on ordinary success, one recoverable error, or after refusal.
+Only the user-facing Parent offers the link, including across stage handoffs.

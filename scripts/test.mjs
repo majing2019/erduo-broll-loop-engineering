@@ -4804,7 +4804,7 @@ test('runtime lock pins the complete HyperFrames and Skills CLI graph with integ
       .map((name) => readFile(path.join(root, name), 'utf8')),
   );
   assert.doesNotThrow(() => validateRuntimeLock(packageJson, lock));
-  assert.equal(RELEASE_VERSION, '1.1.0');
+  assert.equal(RELEASE_VERSION, '1.1.1');
   assert.equal(publicPackage.version, RELEASE_VERSION);
   assert.equal(packageJson.version, RELEASE_VERSION);
   assert.equal(lock.version, RELEASE_VERSION);
@@ -5525,6 +5525,8 @@ test('public release source contains the parent plus thirteen prompt stage Skill
   assert.equal(STANDARD_RELEASE_FILES.includes('docs/V1.0.0-BENCHMARK.md'), true);
   assert.equal(STANDARD_RELEASE_FILES.includes('scripts/install.mjs'), false);
   assert.equal(STANDARD_RELEASE_FILES.includes('scripts/test.mjs'), false);
+  assert.equal(STANDARD_RELEASE_FILES.includes('erduo-broll-loop-engineering/references/author-support.md'), true);
+  assert.equal(RELEASE_FILES.includes('erduo-broll-loop-engineering/references/author-support.md'), true);
   assert.equal(RELEASE_FILES.includes('scripts/test.mjs'), false);
   assert.equal(RELEASE_FILES.includes('scripts/package-release.mjs'), false);
   assert.deepEqual(
